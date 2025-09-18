@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Nextplate",
-    "base_url": "https://nextplate.netlify.app",
+    "title": "GalavitaStroy",
+    "base_url": "https://galavita.by",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "150",
     "logo_height": "27",
-    "logo_text": "Nextplate"
+    "logo_text": "GalavitaStroy"
   },
 
   "settings": {
@@ -24,14 +24,15 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "Designed And Developed by [NetNext Studio](https://netnext.site)"
   },
 
-  "navigation_button": {
-    "enable": true,
-    "label": "Get Started",
-    "link": "https://github.com/zeon-studio/nextplate"
-  },
+ "navigation_button": {
+  "enable": true,
+  "label": "Обсудить проект",
+  "link": "#get-started"
+},
+
 
   "google_tag_manager": {
     "enable": false,

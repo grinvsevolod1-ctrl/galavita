@@ -7,34 +7,41 @@ import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
 import "@/styles/main.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+import GetStartedModal from "@/components/GetStartedModal";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  // import google font css
   const pf = theme.fonts.font_family.primary;
   const sf = theme.fonts.font_family.secondary;
 
   return (
-    <html suppressHydrationWarning={true} lang="en">
-      {/* google tag manager */}
+    <html suppressHydrationWarning={true} lang="ru">
+      {/* Google Tag Manager */}
       {config.google_tag_manager.enable && (
         <GoogleTagManager gtmId={config.google_tag_manager.gtm_id} />
       )}
 
-      {/* head */}
       <head>
-        {/* responsive meta */}
+        {/* Responsive meta */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
 
-        {/* favicon */}
+        {/* SEO title and description */}
+        <title>Galavita Stroy — Общестроительные работы под ключ</title>
+        <meta
+          name="description"
+          content="Galavita Stroy — проектирование, строительство, ремонт, фасады, кровля, благоустройство. Реализация под ключ."
+        />
+
+        {/* Favicon */}
         <link rel="shortcut icon" href={config.site.favicon} />
-        {/* theme meta */}
+
+        {/* Theme meta */}
         <meta name="theme-name" content="nextplate" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
@@ -48,7 +55,7 @@ export default function RootLayout({
           content="#000"
         />
 
-        {/* google font css */}
+        {/* Google Fonts */}
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -62,7 +69,6 @@ export default function RootLayout({
         />
       </head>
 
-      {/* body */}
       <body suppressHydrationWarning={true}>
         <TwSizeIndicator />
         <Providers>
@@ -70,6 +76,7 @@ export default function RootLayout({
           <SearchModal />
           <main>{children}</main>
           <Footer />
+          <GetStartedModal />
         </Providers>
       </body>
     </html>

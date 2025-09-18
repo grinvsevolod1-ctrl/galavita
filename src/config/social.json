@@ -1,24 +1,26 @@
 {
   "main": [
     {
-      "name": "facebook",
-      "icon": "FaFacebook",
-      "link": "https://www.facebook.com/"
+      "name": "Phone",
+      "icon": "FaPhone",
+      "link": "tel:+375296543376"
+    },
+   
+    {
+      "name": "Viber",
+      "icon": "FaViber",
+      "link": "viber://chat?number=+375296543376"
     },
     {
-      "name": "twitter",
-      "icon": "FaTwitter",
-      "link": "https://twitter.com/"
+      "name": "Telegram",
+      "icon": "FaTelegram",
+      "link": "https://t.me/+375296543376"
     },
     {
-      "name": "github",
-      "icon": "FaGithub",
-      "link": "https://www.github.com/"
-    },
-    {
-      "name": "linkedin",
-      "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/"
+      "name": "Email",
+      "icon": "FaEnvelope",
+      "link": "mailto:info@galavita.by"
     }
   ]
 }
+	

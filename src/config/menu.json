@@ -1,56 +1,44 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Главная",
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "О нас",
       "url": "/about"
     },
     {
-      "name": "Elements",
+      "name": "Услуги",
       "url": "/elements"
     },
     {
-      "name": "Pages",
+      "name": "Информация",
       "url": "",
       "hasChildren": true,
       "children": [
         {
-          "name": "Contact",
+          "name": "Контакты",
           "url": "/contact"
         },
         {
-          "name": "Blog",
+          "name": "Работы",
           "url": "/blog"
         },
         {
-          "name": "Authors",
+          "name": "Партнеры",
           "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        },
-        {
-          "name": "404 Page",
-          "url": "/404"
         }
       ]
     }
   ],
   "footer": [
     {
-      "name": "Elements",
+      "name": "Информация о нас",
       "url": "/elements"
     },
     {
-      "name": "Privacy Policy",
+      "name": "Политика конфиденциальности",
       "url": "/privacy-policy"
     }
   ]
