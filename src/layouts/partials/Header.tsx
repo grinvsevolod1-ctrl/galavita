@@ -16,7 +16,7 @@ export interface IChildNavigationLink {
 
 export interface INavigationLink {
   name: string;
-  url: string;
+  url?: string;
   hasChildren?: boolean;
   children?: IChildNavigationLink[];
 }
@@ -31,7 +31,6 @@ const Header = () => {
     window.scroll(0, 0);
   }, [pathname]);
 
-  // 👆 свайп для закрытия меню
   useEffect(() => {
     let startX = 0;
     const handleTouchStart = (e: TouchEvent) => {
@@ -69,8 +68,10 @@ const Header = () => {
                 <li className="nav-item nav-dropdown group relative">
                   <span
                     className={`nav-link inline-flex items-center ${
-                      menu.children?.map(({ url }) => url).includes(pathname) ||
-                      menu.children?.map(({ url }) => `${url}/`).includes(pathname)
+                      pathname &&
+                      menu.children?.some(
+                        ({ url }) => url === pathname || `${url}/` === pathname
+                      )
                         ? "active"
                         : ""
                     }`}
@@ -98,16 +99,18 @@ const Header = () => {
                   </ul>
                 </li>
               ) : (
-                <li className="nav-item">
-                  <Link
-                    href={menu.url}
-                    className={`nav-link block ${
-                      pathname === `${menu.url}/` || pathname === menu.url ? "active" : ""
-                    }`}
-                  >
-                    {menu.name}
-                  </Link>
-                </li>
+                menu.url && (
+                  <li className="nav-item">
+                    <Link
+                      href={menu.url}
+                      className={`nav-link block ${
+                        pathname === `${menu.url}/` || pathname === menu.url ? "active" : ""
+                      }`}
+                    >
+                      {menu.name}
+                    </Link>
+                  </li>
+                )
               )}
             </React.Fragment>
           ))}
@@ -157,10 +160,8 @@ const Header = () => {
           className="fixed inset-0 z-50 flex"
           onClick={() => setMobileMenuOpen(false)}
         >
-          {/* затемнение фона */}
           <div className="absolute inset-0 bg-black bg-opacity-50" />
 
-          {/* меню */}
           <div
             id="mobile-menu"
             className="ml-auto h-full w-72 bg-white dark:bg-gray-900 shadow-lg transition-transform duration-300 flex flex-col relative"
@@ -174,17 +175,19 @@ const Header = () => {
             </div>
 
             <ul className="flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
-              {[...filteredMain, ...infoChildren].map((item, i) => (
-                <li key={`mobile-${i}`}>
-                  <Link
-                    href={"url" in item ? item.url : item.url}
-                    className="block px-4 py-3 text-sm font-semibold font-sans tracking-wide text-gray-800 dark:text-gray-200 hover:text-primary transition"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
+              {[...filteredMain, ...infoChildren].map((item, i) =>
+                item.url ? (
+                  <li key={`mobile-${i}`}>
+                    <Link
+                      href={item.url}
+                      className="block px-4 py-3 text-sm font-semibold font-sans tracking-wide text-gray-800 dark:text-gray-200 hover:text-primary transition"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ) : null
+              )}
             </ul>
 
             {navigation_button.enable && (
