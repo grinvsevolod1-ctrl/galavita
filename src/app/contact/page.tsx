@@ -1,7 +1,7 @@
 "use client";
 
 import config from "@/config/config.json";
-import PageHeader from "@/partials/PageHeader";
+
 import SeoMeta from "@/partials/SeoMeta";
 import { FaRegBuilding } from "react-icons/fa";
 import { useState } from "react";
@@ -15,7 +15,7 @@ const frontmatter = {
 
 const Contact = () => {
   const { title, description, meta_title, image } = frontmatter;
-  const { contact_form_action } = config.params;
+ 
 
   const [submitted, setSubmitted] = useState(false);
 
