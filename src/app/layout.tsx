@@ -8,6 +8,7 @@ import Providers from "@/partials/Providers";
 import "@/styles/main.css";
 import { GoogleTagManager } from "@next/third-parties/google";
 import GetStartedModal from "@/components/GetStartedModal";
+import FloatingMenu from "@/components/FloatingMenu"; 
 
 export default function RootLayout({
   children,
@@ -77,6 +78,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <GetStartedModal />
+          <FloatingMenu /> {/* ✅ добавлено */}
         </Providers>
       </body>
     </html>

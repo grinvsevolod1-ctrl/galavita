@@ -1,5 +1,6 @@
 ---
-title: "Blog Posts"
-meta_title: ""
-description: "this is meta description"
+title: "Наши проекты"
+meta_title: "Реализованные работы Galavita Stroy"
+description: "Примеры реализованных строительных решений: фасады, кровля, благоустройство, проектирование. Фото, описание, технологии."
+---
 ---

@@ -1,30 +1,26 @@
 ---
-title: "Privacy"
-meta_title: ""
-description: "this is meta description"
+title: "Политика конфиденциальности"
+meta_title: "Конфиденциальность Galavita Stroy — защита данных клиентов"
+description: "Условия обработки и защиты персональных данных клиентов Galavita Stroy. Прозрачность, ответственность, безопасность."
 draft: false
 ---
 
-#### Responsibility of Contributors
+#### Ответственность участников
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+Каждый участник, взаимодействующий с платформой Galavita Stroy, обязуется соблюдать этические нормы и уважать конфиденциальность других пользователей. Мы не допускаем публикации материалов, нарушающих права третьих лиц, а также распространения недостоверной или вредоносной информации.
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+#### Сбор персональных данных
 
-#### Gathering of Personal Information
+Мы собираем только те данные, которые необходимы для связи, обработки заявок и улучшения качества обслуживания. Это может включать имя, номер телефона, email, Telegram/Viber-аккаунт и другие контактные сведения, предоставленные добровольно.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+#### Защита персональных данных
 
-#### Protection of Personal- Information
+Все полученные данные хранятся в защищённой среде и не передаются третьим лицам без согласия пользователя, за исключением случаев, предусмотренных законодательством. Мы применяем технические и организационные меры для предотвращения утечки, потери или несанкционированного доступа.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+#### Изменения политики конфиденциальности
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+1. Все обновления публикуются на этой странице и вступают в силу с момента публикации.
+2. Пользователи получают уведомления о значимых изменениях, если они затрагивают обработку их данных.
+3. Мы оставляем за собой право корректировать политику в соответствии с изменениями законодательства или технологической инфраструктуры.
+4. Продолжение использования сайта после обновления означает согласие с новой редакцией политики.
 
-#### Privacy Policy Changes
-
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
